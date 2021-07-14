@@ -13,6 +13,12 @@ let s=date.getSeconds();
 let update = setInterval(()=>{
 	secs.classList.toggle('display');
 s+=1;
+if(s>=40){
+	secs.style.color="#E8BC5A";
+}
+if(s>=50){
+	secs.style.color="red";
+}
 console.log(s);
 // updating minutes
 if(s==60){
